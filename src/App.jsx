@@ -8,8 +8,6 @@ const App = () => {
   return (
       <div className="back-color">
         <Navs/>
-        <Caros/>
-        <Searchinput/>
       </div>
   );
 }
