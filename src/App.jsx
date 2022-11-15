@@ -1,13 +1,18 @@
 import Navs from "./components/Navigation";
-import Caros from "./components/Carousel";
-import Searchinput from "./components/Search";
-// import {Routes, Route} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
+import Home from "./pages/Home";
+import ArticleM from "./pages/ArticleMenthy";
 import "./App.css";
+import {pallet1} from "./components/Color"
 
 const App = () => {
   return (
-      <div className="back-color">
+      <div style={pallet1}>
         <Navs/>
+        <Routes>
+          <Route element={<Home/>} path="/"/>
+          <Route element={<ArticleM/>} path="/ArticleM"/>
+        </Routes>
       </div>
   );
 }

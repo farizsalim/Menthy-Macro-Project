@@ -1,6 +1,6 @@
 
 const pallet1 = {
-    backgroundColor: "#256D85",
+    backgroundColor: "#DFF6FF",
     color: "#FFFFFF"
 };
 

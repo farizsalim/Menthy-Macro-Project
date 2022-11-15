@@ -1,5 +1,6 @@
 import{Navbar, Container, Nav, Button} from "react-bootstrap"
-import { pallet1, pallet2, pallet3, pallet4 } from "./Color"
+import { NavLink } from "react-router-dom"
+import {pallet3} from "./Color"
 import mainLogo from "../images/Logo.png"
 import "../App.css"
 const Navs = ()=>{
@@ -17,12 +18,12 @@ const Navs = ()=>{
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto justify-content-center flex-grow-1 px-5">
-                <Nav.Link href="#home"><h6 className="nav-text">Tes Kesehatan Mental</h6></Nav.Link>
-                <Nav.Link href="#link"><h6 className="nav-text">Tipe Kesehatan Mental</h6></Nav.Link>
-                <Nav.Link href="#artikel"><h6 className="nav-text">Artikel Kesehatan Mental</h6></Nav.Link>
+                <NavLink to="/" className="nav-link"><h6 className="nav-text">Tes Kesehatan Mental</h6></NavLink>
+                <NavLink to="/" className="nav-link"><h6 className="nav-text">Tipe Kesehatan Mental</h6></NavLink>
+                <NavLink to="/ArticleM" className="nav-link"><h6 className="nav-text">Artikel Kesehatan Mental</h6></NavLink>
             </Nav>
             <Button className="btn-app" variant="justify-content-end flex-grow-2" 
-            style={pallet2}
+            style={pallet3}
             >Masuk</Button>
             </Navbar.Collapse>
         </Container>
