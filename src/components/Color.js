@@ -1,7 +1,7 @@
 
 const pallet1 = {
     backgroundColor: "#DFF6FF",
-    color: "#FFFFFF"
+    color: "#000000"
 };
 
 const pallet2 = {

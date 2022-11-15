@@ -1,6 +1,6 @@
 import Navs from "./components/Navigation";
 import {Routes, Route} from "react-router-dom";
-import Home from "./pages/Home";
+import Landpage from "./pages/Landpage";
 import ArticleM from "./pages/ArticleMenthy";
 import "./App.css";
 import {pallet1} from "./components/Color"
@@ -10,7 +10,7 @@ const App = () => {
       <div style={pallet1}>
         <Navs/>
         <Routes>
-          <Route element={<Home/>} path="/"/>
+          <Route element={<Landpage/>} path="/"/>
           <Route element={<ArticleM/>} path="/ArticleM"/>
         </Routes>
       </div>

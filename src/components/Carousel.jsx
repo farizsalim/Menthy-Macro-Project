@@ -5,7 +5,7 @@ const Caros = ()=>{
 
     return(
         <section style={pallet3}>
-            <Container className="py-5">
+            <Container className="pb-5">
                     <Carousel>
                 <Carousel.Item>
                     <img
