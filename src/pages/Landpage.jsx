@@ -1,10 +1,13 @@
-import { Container } from "react-bootstrap";
-
+import {Topland} from "../components/Imagesrc"
+import Landpage1 from "../components/Landpage1";
 const Landpage = () =>{
     return(
-        <Container className="py-2">
-            <h1>Tes Landpage</h1>
-        </Container>
+        <>
+            <section>
+                <img src={Topland} alt=""/>
+            </section>
+            <Landpage1/>
+        </>
     )
 }
 
