@@ -1,5 +1,5 @@
 import{Card, Container, Button} from "react-bootstrap"
-import {pallet3,pallet4} from "./Color"
+import {pallet3,pallet4,fontpallet1} from "./Color"
 import { Artikel2 } from "./Imagesrc"
 
 const Bigcard = ({title,textBody}) =>{
@@ -10,8 +10,8 @@ const Bigcard = ({title,textBody}) =>{
             <Card style={pallet3} className="card flex-row flex-wrap">
                 <Card.Img src={Artikel2} className="rounded-top" width={1000} height={300}/>
                 <Card.Body>
-                    <Card.Title>{title}</Card.Title>
-                    <Card.Text>
+                    <Card.Title style={fontpallet1}>{title}</Card.Title>
+                    <Card.Text style={fontpallet1}>
                         {textBody}
                     </Card.Text>
                     <Button className="btn-app" style={pallet4}>Baca Selengkapnya</Button>

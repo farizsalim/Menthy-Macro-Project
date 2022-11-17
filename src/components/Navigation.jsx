@@ -1,7 +1,7 @@
 import{Navbar, Container, Nav, Button} from "react-bootstrap"
 import { LANDPAGE,ARTICLE,TESTKESEHATAN,TIPEKESEHATAN } from "../router";
 import { NavLink } from "react-router-dom"
-import {pallet3} from "./Color"
+import {pallet3,fontpallet1} from "./Color"
 import mainLogo from "../images/Logo.png"
 import "../App.css"
 const Navs = ()=>{
@@ -25,7 +25,7 @@ const Navs = ()=>{
             </Nav>
             <Button className="btn-app" variant="justify-content-end flex-grow-2" 
             style={pallet3}
-            >Masuk</Button>
+            > <h6 style={fontpallet1} className="m-1">Masuk</h6></Button>
             </Navbar.Collapse>
         </Container>
     </Navbar>

@@ -1,5 +1,5 @@
 import{Card, Container, Button, Row, Col} from "react-bootstrap"
-import {pallet3,pallet4} from "./Color"
+import {pallet3,pallet4,fontpallet1} from "./Color"
 import { Artikel1 } from "./Imagesrc"
 
 const ArticleCard = ({title,textBody}) =>{
@@ -13,8 +13,8 @@ const ArticleCard = ({title,textBody}) =>{
                         </Col>
                         <Col md={10}>
                             <Card.Body>
-                                <Card.Title>{title}</Card.Title>
-                                <Card.Text>
+                                <Card.Title style={fontpallet1}>{title}</Card.Title>
+                                <Card.Text style={fontpallet1}>
                                     {textBody}
                                 </Card.Text>
                                 <Button className="btn-app" style={pallet4}>Baca Selengkapnya</Button>

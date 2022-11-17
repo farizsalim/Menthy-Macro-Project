@@ -12,19 +12,26 @@ const pallet2 = {
 
 const pallet3 = {
     backgroundColor: "#256D85",
-    color: "#FFFFFF",
     borderWidth: 0,
 };
 
 const pallet4 = {
     backgroundColor: "#06283D",
-    color: "#FFFFFF",
     borderWidth: 0,
 };
+
+const fontpallet1 ={
+    color: "#ffffff"
+}
+
+const fontpallet2 ={
+    color: "#000000"
+}
+
 
 const defaultpallet = {
     backgroundColor: "#ffffff",
     color: "#000000",
 }
 
-export {defaultpallet,pallet1, pallet2, pallet3, pallet4}; 
+export {defaultpallet,pallet1, pallet2, pallet3, pallet4, fontpallet1, fontpallet2}; 

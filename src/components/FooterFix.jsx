@@ -6,7 +6,7 @@ const FooterFix = () => {
     return(
         <section style={defaultpallet}>
             <Container>
-                <section className="d-flex justify-content-center pb-5 pt-3">
+                <section className="d-flex justify-content-center pb-3 pt-3">
                     <h6>@Copyright 2022</h6>
                 </section>
                 <section className="d-flex justify-content-center p-1" style={{color: "#256D85"}}>
@@ -14,7 +14,7 @@ const FooterFix = () => {
                     <Nav.Link className="px-2">Syarat Ketentuan</Nav.Link>
                     <Nav.Link className="px-2">Kebijakan Privasi</Nav.Link>
                 </section>
-                <section className="d-flex justify-content-center p-5">
+                <section className="d-flex justify-content-center p-3">
                     <img src={MediaLogo} alt="" width={250}/>
                 </section>
                 <section className="d-flex justify-content-center pb-3">
