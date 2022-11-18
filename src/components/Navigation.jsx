@@ -1,5 +1,5 @@
 import{Navbar, Container, Nav, Button} from "react-bootstrap"
-import { LANDPAGE,ARTICLE,TESTKESEHATAN,TIPEKESEHATAN } from "../router";
+import { LANDPAGE,ARTICLE,MENTALTYPE,MENTALTEST } from "../router";
 import { NavLink } from "react-router-dom"
 import {pallet3,fontpallet1} from "./Color"
 import mainLogo from "../images/Logo.png"
@@ -19,8 +19,8 @@ const Navs = ()=>{
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto justify-content-center flex-grow-1 px-5">
-                <NavLink to={TESTKESEHATAN} className="nav-link"><h6 className="nav-text">Tes Kesehatan Mental</h6></NavLink>
-                <NavLink to={TIPEKESEHATAN} className="nav-link"><h6 className="nav-text">Tipe Permasalahan Mental</h6></NavLink>
+                <NavLink to={MENTALTEST} className="nav-link"><h6 className="nav-text">Tes Kesehatan Mental</h6></NavLink>
+                <NavLink to={MENTALTYPE} className="nav-link"><h6 className="nav-text">Tipe Permasalahan Mental</h6></NavLink>
                 <NavLink to={ARTICLE} className="nav-link"><h6 className="nav-text">Artikel</h6></NavLink>
             </Nav>
             <Button className="btn-app" variant="justify-content-end flex-grow-2" 

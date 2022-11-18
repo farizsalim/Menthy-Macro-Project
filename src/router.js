@@ -1,6 +1,6 @@
 const LANDPAGE = "/";
 const ARTICLE = "/ArticleM";
-const TIPEKESEHATAN = "/TipeKesehatan";
-const TESTKESEHATAN= "/TestKesehatan";
+const MENTALTYPE = "/TipeKesehatan";
+const MENTALTEST= "/TestKesehatan";
 
-export {LANDPAGE,ARTICLE,TIPEKESEHATAN,TESTKESEHATAN};
+export {LANDPAGE,ARTICLE,MENTALTYPE,MENTALTEST};
