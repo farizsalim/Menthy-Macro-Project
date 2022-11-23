@@ -1,6 +1,6 @@
 import Navs from "./components/Navigation";
 import {Routes, Route} from "react-router-dom";
-import { LANDPAGE,ARTICLE, MENTALTYPE, SIGNUP, ARTICLE2, LOGIN , ARTICLEPAGE, MENTALTEST} from "./router";
+import { LANDPAGE,ARTICLE, MENTALTYPE, SIGNUP, ARTICLE2, LOGIN , ARTICLEPAGE, MENTALTEST,SYARAT_KETENTUAN} from "./router";
 import Landpage from "./pages/Landpage";
 import ArticleM from "./pages/ArticleMenthy";
 import MentalType from "./pages/MentalType";
@@ -12,6 +12,7 @@ import ArticleM2 from "./pages/ArticleMenthy2";
 import NavsTrue from "./components/NavigationLog";
 import Articlepage from "./pages/ArticlePage";
 import Testpsikologi from "./pages/TestPsikologi";
+import SyaratKetentuan from "./pages/Syarat_Ketentuan";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
             <Route element={<ArticleM2/>} path={ARTICLE2}/>
             <Route element={<Articlepage/>} path={ARTICLEPAGE}/>
             <Route element={<Testpsikologi/>} path={MENTALTEST}/>
+            <Route element={<SyaratKetentuan/>} path={SYARAT_KETENTUAN}/>
           </Routes>
       </section>
   );
