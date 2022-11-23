@@ -1,7 +1,7 @@
 import { Container, Nav } from "react-bootstrap";
 import { defaultpallet,fontpallet2 } from "./Color";
 import { MediaLogo } from "./Imagesrc";
-import { SYARAT_KETENTUAN } from "../router";
+import { SYARAT_KETENTUAN, KEBIJAKAN_PRIVASI } from "../router";
 import { NavLink } from "react-router-dom";
 
 const FooterFix = () => {
@@ -14,7 +14,8 @@ const FooterFix = () => {
                 <section className="d-flex justify-content-center p-1" style={{color: "#256D85"}}>
                     <Nav.Link className="px-2">Hubungi Kami</Nav.Link>
                     <NavLink to={SYARAT_KETENTUAN} className="px-2 nav-link" style={fontpallet2}>Syarat Ketentuan</NavLink>
-                    <Nav.Link className="px-2">Kebijakan Privasi</Nav.Link>
+                    <NavLink to={KEBIJAKAN_PRIVASI} className="px-2 nav-link" style={fontpallet2}>Kebijakan Privasi</NavLink>
+                    
                 </section>
                 <section className="d-flex justify-content-center p-3">
                     <img src={MediaLogo} alt="" width={250}/>

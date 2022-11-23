@@ -6,6 +6,7 @@ import MentalCard from "../components/MentalCard";
 import Searchinput from "../components/Search";
 import { MENTALTYPE } from "../router";
 import { NavLink } from "react-router-dom";
+import FooterFix from "../components/FooterFix";
 
 const MentalType = () => {
     return(
@@ -36,6 +37,10 @@ const MentalType = () => {
                 </Row>
             </Container>
         </section>
+        <section style={{paddingTop: '5cm'}}>
+
+<FooterFix/>        
+</section>
         </>
     )
 }
