@@ -1,7 +1,6 @@
 import Navs from "./components/Navigation";
 import {Routes, Route} from "react-router-dom";
-import { LANDPAGE,ARTICLE, MENTALTYPE, SIGNUP, LOGIN } from "./router";
-import { LANDPAGE,ARTICLE, MENTALTYPE, SIGNUP, ARTICLE2 } from "./router";
+import { LANDPAGE,ARTICLE, MENTALTYPE, SIGNUP, ARTICLE2, LOGIN } from "./router";
 import Landpage from "./pages/Landpage";
 import ArticleM from "./pages/ArticleMenthy";
 import MentalType from "./pages/MentalType";
