@@ -1,8 +1,5 @@
-import { Row,Col,Container, Card } from "react-bootstrap";
-import { NavLink } from "react-router-dom"
-import { pallet3, fontpallet2, fontpallet1 } from "../components/Color";
-import {Topland} from "../components/Imagesrc"
-import Landpage1 from "../components/Landpage1";
+import { Row,Container, Card } from "react-bootstrap";
+import { pallet3, fontpallet1 } from "../components/Color";
 import FooterFix from "../components/FooterFix";
 
 

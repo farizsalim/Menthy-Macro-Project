@@ -1,11 +1,8 @@
 import { Container, Row , Col} from "react-bootstrap";
 import Caros from "../components/Carousel";
-import { pallet3 } from "../components/Color";
 import { Depresi, Disosiatif, Kecemasan, Kepribadian, Panik, Stres } from "../components/Imagesrc";
 import MentalCard from "../components/MentalCard";
 import Searchinput from "../components/Search";
-import { MENTALTYPE } from "../router";
-import { NavLink } from "react-router-dom";
 import FooterFix from "../components/FooterFix";
 
 const MentalType = () => {
