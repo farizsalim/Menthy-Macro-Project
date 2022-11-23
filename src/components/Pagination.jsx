@@ -1,17 +1,16 @@
-import { Container, Pagination} from "react-bootstrap";
+import { Container, Button} from "react-bootstrap";
+import { pallet3,pallet4 } from "./Color";
 
 const Pageart = () => {
 
 
   return (
     <>
-    <Container className="d-flex justify-content-center">
-      <Pagination>
-        <Pagination.Item active >{1}</Pagination.Item>
-        <Pagination.Item>{2}</Pagination.Item>
-        <Pagination.Item>{3}</Pagination.Item>
-        <Pagination.Next/>
-      </Pagination>
+    <Container className="d-flex justify-content-center py-3">
+      <Button style={pallet3} className="mx-2">1</Button>
+      <Button style={pallet4} className="mx-2">2</Button>
+      <Button style={pallet4} className="mx-2">3</Button>
+      <Button style={pallet4} className="mx-2">Selanjutnya >> </Button>
     </Container>
     </>
   );

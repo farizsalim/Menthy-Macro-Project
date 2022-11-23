@@ -1,4 +1,3 @@
-
 const pallet1 = {
     backgroundColor: "#DFF6FF",
     color: "#000000",
@@ -21,13 +20,12 @@ const pallet4 = {
 };
 
 const fontpallet1 ={
-    color: "#ffffff"
+    color: "#F8FAFC"
 }
 
 const fontpallet2 ={
-    color: "#000000"
+    color: "#06283D"
 }
-
 
 const defaultpallet = {
     backgroundColor: "#ffffff",

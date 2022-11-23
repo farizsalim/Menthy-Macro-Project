@@ -5,29 +5,29 @@ const CardSign = () => {
     return(
         <>
         <Card className="m-4" style={{width: "80rem"}}>
-            <Card.Body>
+            <Card.Body style={{backgroundColor: "#F8FAFC"}}>
                 <Card.Title className="text-center">Selamat Datang Di Menthy</Card.Title>
                 <Card.Text className="text-center"><b>DAFTAR</b></Card.Text>
                 <Form>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Group className="mb-3" controlId="formBasicusername">
                         <Form.Label>Nama</Form.Label>
                         <Form.Control type="username" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Group className="mb-3" controlId="formBasicNumber">
                         <Form.Label>Ponsel</Form.Label>
-                        <Form.Control type="username" />
+                        <Form.Control type="number" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email</Form.Label>
-                        <Form.Control type="username" />
+                        <Form.Control type="email" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Kata Sandi</Form.Label>
-                        <Form.Control type="username" />
+                        <Form.Control type="password" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Konfirmasi Kata Sandi</Form.Label>
-                        <Form.Control type="username" />
+                        <Form.Control type="password" />
                     </Form.Group>
                 </Form>
                 <section className="d-flex justify-content-center py-2">
