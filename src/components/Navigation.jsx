@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom"
 import {pallet4,fontpallet1,fontpallet2} from "./Color"
 import mainLogo from "../images/Logo.png"
 import "../App.css"
-import Signup from "../pages/SignupPage";
 const Navs = ()=>{
     
     return(
@@ -24,8 +23,8 @@ const Navs = ()=>{
                 <NavLink to={MENTALTYPE} className="nav-link"><h6 style={fontpallet2} >Tipe Permasalahan Mental</h6></NavLink>
                 <NavLink to={ARTICLE} className="nav-link"><h6 style={fontpallet2} >Artikel</h6></NavLink>
             </Nav>
-            <Button className="btn-app" variant="justify-content-end flex-grow-2" style={pallet4}>
-                <NavLink to={LOGIN} className="nav-link"><h6 style={fontpallet1} className="m-1">Masuk</h6></NavLink></Button>
+            <NavLink to={LOGIN} className="nav-link"><Button className="btn-app" variant="justify-content-end flex-grow-2" style={pallet4}>
+                <h6 style={fontpallet1} className="m-1">Masuk</h6></Button></NavLink>
             </Navbar.Collapse>
         </Container>
     </Navbar>

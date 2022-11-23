@@ -7,8 +7,8 @@ const Signup = ({}) =>{
     return(
         <>
         <section>
-            <Container className="py-5">
-                <Row xs={1} md={2} className="g-3">
+            <Container className="mt-5 p-5" style={{height: "50rem"}}>
+                <Row xs={1} md={2}>
                     <Col>
                         <img src={Imgsignup} alt="" width={700} className="px-5" style={{paddingTop: '5rem'}}/>
                     </Col>
