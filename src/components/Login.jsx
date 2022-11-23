@@ -40,14 +40,14 @@ const Login = ({}) =>{
                                 <p><b className="m-0" style={fontpallet2}> Lupa Kata Sandi? </b></p>
                                 </section>
                                 <Col >
-                                <section className = "d-flex justify-content-between">
-                                <p><b className="m-0" style={fontpallet2}> Belum Punya Akun?  </b></p>
-                                <NavLink  to={SIGNUP} className="nav-link"><h6 style={fontpallet3} > DAFTAR</h6></NavLink>
+                                <section className = "d-flex justify-content-center">
+                                    <p><b className="mx-3" style={fontpallet2}> Belum Punya Akun?  </b></p>
+                                    <NavLink  to={SIGNUP} className="nav-link mx-3"><h6 style={fontpallet3} > DAFTAR</h6></NavLink>
                                 </section> 
                                 </Col>
                                 
                                 <section className="d-flex justify-content-center py-2">
-                                <Button style={pallet2}><b className="m-0" style={fontpallet2}>MASUK</b></Button>
+                                    <Button id="loginuser" style={pallet2}><b className="m-0" style={fontpallet2}>MASUK</b></Button>
                                 </section>
                             </Card.Body>
                         </Card>

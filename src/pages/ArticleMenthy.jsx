@@ -4,6 +4,7 @@ import SearchInput from "../components/Search";
 import ArticleCard from "../components/ArticleCard";
 import Pageart from "../components/Pagination";
 import FooterFix from "../components/FooterFix";
+import { ARTICLEPAGE } from "../router";
 import { Artikel1 ,Artikel2,Artikel3,Artikel4} from "../components/Imagesrc"
 
 const ArticleM = () =>{
@@ -17,7 +18,9 @@ const ArticleM = () =>{
                         <ArticleCard 
                         imageArt={Artikel1}
                         title="Gejala Depresi, Ketahui di Antaranya"
-                        textBody="Banyak orang yang sebenarnya sedang mengalami depresi, tapi tidak menyadarinya. "/>
+                        textBody="Banyak orang yang sebenarnya sedang mengalami depresi, tapi tidak menyadarinya. "
+                        siteart={ARTICLEPAGE}
+                        />
                     </Col>
                     <Col>
                         <ArticleCard 

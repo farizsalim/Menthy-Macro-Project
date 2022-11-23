@@ -32,7 +32,7 @@ const fontpallet3 ={
 }
 
 const defaultpallet = {
-    backgroundColor: "#ffffff",
+    backgroundColor: "#F8FAFC",
     color: "#000000",
 }
 

@@ -18,6 +18,9 @@ import panik from "../images/panik.jpeg"
 import stres from "../images/stres.jpeg"
 import imgsignup from "../images/signup.png"
 import imglogin from   "../images/LoginLogo.png"
+import user from "../images/User.png"
+import usertest from "../images/USERTEST.png"
+import teststart from "../images/teststart.png"
 
 const Caros1 = caros1;
 const Caros2 = caros2;
@@ -44,4 +47,8 @@ const Kepribadian = kepribadian;
 const Panik = panik;
 const Stres = stres;
 
-export {Caros1,Caros2,Caros3,Artikel1,Artikel2,Artikel3,Artikel4,MediaLogo,Topland,Artpage1,Artpage2,Artpage3,Depresi,Disosiatif,Kecemasan,Kepribadian,Panik,Stres,Imgsignup, Imglogin};
+const User = user;
+const Usertest = usertest;
+
+const Teststart = teststart;
+export {Teststart,Usertest,User,Caros1,Caros2,Caros3,Artikel1,Artikel2,Artikel3,Artikel4,MediaLogo,Topland,Artpage1,Artpage2,Artpage3,Depresi,Disosiatif,Kecemasan,Kepribadian,Panik,Stres,Imgsignup, Imglogin};
