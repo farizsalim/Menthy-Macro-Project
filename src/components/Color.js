@@ -27,9 +27,13 @@ const fontpallet2 ={
     color: "#06283D"
 }
 
+const fontpallet3 ={
+    color: "#3b82f6"
+}
+
 const defaultpallet = {
     backgroundColor: "#ffffff",
     color: "#000000",
 }
 
-export {defaultpallet,pallet1, pallet2, pallet3, pallet4, fontpallet1, fontpallet2}; 
+export {defaultpallet,pallet1, pallet2, pallet3, pallet4, fontpallet1, fontpallet2, fontpallet3}; 

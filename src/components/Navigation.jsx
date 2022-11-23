@@ -1,5 +1,5 @@
 import{Navbar, Container, Nav, Button} from "react-bootstrap"
-import { LANDPAGE,ARTICLE,MENTALTYPE,MENTALTEST, SIGNUP } from "../router";
+import { LANDPAGE,ARTICLE,MENTALTYPE,MENTALTEST, LOGIN } from "../router";
 import { NavLink } from "react-router-dom"
 import {pallet4,fontpallet1,fontpallet2} from "./Color"
 import mainLogo from "../images/Logo.png"
@@ -25,7 +25,7 @@ const Navs = ()=>{
                 <NavLink to={ARTICLE} className="nav-link"><h6 style={fontpallet2} >Artikel</h6></NavLink>
             </Nav>
             <Button className="btn-app" variant="justify-content-end flex-grow-2" style={pallet4}>
-                <NavLink to={SIGNUP} className="nav-link"><h6 style={fontpallet1} className="m-1">Masuk</h6></NavLink></Button>
+                <NavLink to={LOGIN} className="nav-link"><h6 style={fontpallet1} className="m-1">Masuk</h6></NavLink></Button>
             </Navbar.Collapse>
         </Container>
     </Navbar>
