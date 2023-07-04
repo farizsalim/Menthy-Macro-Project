@@ -2,10 +2,42 @@ import{Container, Row, Col, Card, Form, Button} from "react-bootstrap"
 import {pallet3,pallet2,fontpallet2, fontpallet3} from "./Color"
 import { Imglogin } from "./Imagesrc"
 import mainLogo from "../images/Logo.png"
-import { NavLink } from "react-router-dom"
-import { SIGNUP } from "../router";
+import { NavLink ,useNavigate} from "react-router-dom"
+import { SIGNUP,LANDPAGE } from "../router"
+import Swal from "sweetalert2"
+
 
 const Login = ({}) =>{
+    const navigate = useNavigate();
+    
+    function successalert(){
+        Swal.fire({
+            icon: 'success',
+            title: 'Login Berhasil',
+        }).then(() => {
+            navigate(LANDPAGE);
+          });
+    }
+
+    function erroralert(){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'User Tidak Ditemukan',
+          })
+    }
+    
+    function handelLogin(){
+        const username = document.getElementById("formBasicusername").value;
+        const password = document.getElementById("formBasicPassword").value;
+
+        if (username !== "" && password !== "") {
+        successalert();
+        } else {
+        erroralert();
+        }
+    }
+
     return(
         <>
         <section>
@@ -47,7 +79,7 @@ const Login = ({}) =>{
                                 </Col>
                                 
                                 <section className="d-flex justify-content-center py-2">
-                                    <Button id="loginuser" style={pallet2}><b className="m-0" style={fontpallet2}>MASUK</b></Button>
+                                    <Button id="loginuser" style={pallet2} onClick={handelLogin}><b className="m-0" style={fontpallet2}>MASUK</b></Button>
                                 </section>
                             </Card.Body>
                         </Card>

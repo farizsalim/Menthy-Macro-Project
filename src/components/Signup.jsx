@@ -2,8 +2,43 @@ import{Container, Row, Col, Card, Form, Button} from "react-bootstrap"
 import {pallet3,pallet2,fontpallet2} from "./Color"
 import { Imgsignup } from "./Imagesrc"
 import mainLogo from "../images/Logo.png"
+import Swal from "sweetalert2"
+import { LANDPAGE } from "../router"
+import { useNavigate } from "react-router-dom";
 
 const Signup = ({}) =>{
+    const navigate = useNavigate();
+
+    function successalert(){
+        Swal.fire({
+            icon: 'success',
+            title: 'Registrasi Berhasil',
+        }).then(() => {
+            navigate(LANDPAGE);
+          });
+          
+    }
+
+    function erroralert(){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Lengkapi Data',
+          })
+    }
+    
+    function handelSignUp(){
+        const username = document.getElementById("formBasicusername").value;
+        const number = document.getElementById("formBasicNumber").value;
+        const email = document.getElementById("formBasicEmail").value;
+        const password = document.getElementById("formBasicPassword").value;
+
+        if (username !== "" && password !== "") {
+        successalert();
+        } else {
+        erroralert();
+        }
+    }
     return(
         <>
         <section>
@@ -46,7 +81,7 @@ const Signup = ({}) =>{
                                     </Form.Group>
                                 </Form>
                                 <section className="d-flex justify-content-center py-2">
-                                <Button style={pallet2}><b className="m-0" style={fontpallet2}>DAFTAR</b></Button>
+                                <Button style={pallet2} onClick={handelSignUp}><b className="m-0" style={fontpallet2}>DAFTAR</b></Button>
                                 </section>
                             </Card.Body>
                         </Card>
